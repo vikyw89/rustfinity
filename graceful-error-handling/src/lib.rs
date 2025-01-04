@@ -9,5 +9,5 @@ pub fn parse_percentage(input: &str) -> Result<u8, String> {
         return Err("Percentage out of range".to_string());
     }
 
-    return Ok(parsed_number as u8);
+    Ok(parsed_number as u8)
 }
